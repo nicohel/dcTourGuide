@@ -59,14 +59,14 @@
                 android:id="@+id/restaurants"
                 style="@style/CategoryStyle"
                 android:background="@color/category_restaurants"
-                android:text="Restaurants" />
+                android:text="@string/restaurants" />
 
             <TextView
                 android:id="@+id/bars"
                 style="@style/CategoryStyle"
                 android:layout_marginBottom="16dp"
                 android:background="@color/category_bars"
-                android:text="Bars" />
+                android:text="@string/bars" />
         </LinearLayout>
         </RelativeLayout>
 </ScrollView>

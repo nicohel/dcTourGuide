@@ -15,12 +15,12 @@ public class SightsActivity extends AppCompatActivity {
 
         // Create an ArrayList of DC Sights objects
         ArrayList<dcAttractions> attractions = new ArrayList<dcAttractions>();
-        attractions.add(new dcAttractions("Washington Monument", "Landmark obelisk rising from the National Mall that honors America's first president.", "2 15th St NW", R.drawable.wash_thumb));
-        attractions.add(new dcAttractions("Thomas Jefferson Memorial", "Columned rotunda in the style of Rome's Pantheon on the man-made reservoir known as the Tidal Basin.", "701 E Basin Dr SW", R.drawable.jeff_thumb));
-        attractions.add(new dcAttractions("Lincoln Memorial", "Parthenon-inspired tribute to Abraham Lincoln with a 19-ft. marble statue, murals & reflecting pool.", "2 Lincoln Memorial Cir NW", R.drawable.lincoln));
-        attractions.add(new dcAttractions("National WWII Memorial", "Iconic outdoor memorial honoring the 16 million Americans who served during World War II.", "1750 Independence Ave SW", R.drawable.wwii));
-        attractions.add(new dcAttractions("Franklin Delano Roosevelt Memorial", "Memorial to FDR featuring waterfalls, sculptures & quotes from the former president.", "1750 Independence Ave SW", R.drawable.fdr));
-        attractions.add(new dcAttractions("Robert A. Taft Memorial and Carillon", "Memorial to Robert Taft with obelisks , statues, and waterfall.", "New Jersey Ave NW", R.drawable.taft));
+        attractions.add(new dcAttractions(getString(R.string.washing), getString(R.string.washDesc), getString(R.string.washAdd), R.drawable.wash_thumb));
+        attractions.add(new dcAttractions(getString(R.string.jeff), getString(R.string.jeffDesc), getString(R.string.jeffAdd), R.drawable.jeff_thumb));
+        attractions.add(new dcAttractions(getString(R.string.linc), getString(R.string.lincDesc), getString(R.string.lincAdd), R.drawable.lincoln));
+        attractions.add(new dcAttractions(getString(R.string.wii), getString(R.string.wwiiDesc), getString(R.string.wwiiAdd), R.drawable.wwii));
+        attractions.add(new dcAttractions(getString(R.string.fdr), getString(R.string.fdrDesc), getString(R.string.fdrAdd), R.drawable.fdr));
+        attractions.add(new dcAttractions(getString(R.string.taft), getString(R.string.taftDesc), getString(R.string.taftAdd), R.drawable.taft));
 
         // Create an {@link dcAttractionsAdapter}, whose data source is a list of
         // {@link dcAttractions}s. The adapter knows how to create list item views for each item

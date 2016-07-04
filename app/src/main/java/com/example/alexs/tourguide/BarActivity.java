@@ -15,12 +15,12 @@ public class BarActivity extends AppCompatActivity {
 
         // Create an ArrayList of DC Bars objects
         ArrayList<dcAttractions> attractions = new ArrayList<dcAttractions>();
-        attractions.add(new dcAttractions("ChurchKey", "Snacks, flatreads, huge beer selection", "1601 14th St NW"));
-        attractions.add(new dcAttractions("Nellie's Sports Bar", "Casual pub with drag events, sports games, and poker night.", "900 U St NW"));
-        attractions.add(new dcAttractions("The Gibson", "Sleek Prohibition style speakeasy.", "2009 14th St NW"));
-        attractions.add(new dcAttractions("Room 11", "Intimate hipster nook.", "3234 11th St NW"));
-        attractions.add(new dcAttractions("JackRose Saloon", "High-end whiskey bar.", "2007 18th St NW"));
-        attractions.add(new dcAttractions("The Hamilton", "Iconic late night eatery and bar.", "600 14th St NW"));
+        attractions.add(new dcAttractions(getString(R.string.churchkey), getString(R.string.churchDesc), getString(R.string.churchadd)));
+        attractions.add(new dcAttractions(getString(R.string.nellies), getString(R.string.nellieDesc), getString(R.string.nellie)));
+        attractions.add(new dcAttractions(getString(R.string.gibson), getString(R.string.gibsonDesc), getString(R.string.gibsonAdd)));
+        attractions.add(new dcAttractions(getString(R.string.room), getString(R.string.roomDesc), getString(R.string.roomAdd)));
+        attractions.add(new dcAttractions(getString(R.string.jack), getString(R.string.jackDesc), getString(R.string.jackAdd)));
+        attractions.add(new dcAttractions(getString(R.string.hamil), getString(R.string.hamilDesc), getString(R.string.hamilAdd)));
 
         // Create an {@link dcAttractionsAdapter}, whose data source is a list of
         // {@link dcAttractions}s. The adapter knows how to create list item views for each item

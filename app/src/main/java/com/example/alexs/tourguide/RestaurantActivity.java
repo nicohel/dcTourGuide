@@ -15,14 +15,14 @@ public class RestaurantActivity extends AppCompatActivity {
 
         // Create an ArrayList of DC Restaurants objects
         ArrayList<dcAttractions> attractions = new ArrayList<dcAttractions>();
-        attractions.add(new dcAttractions("Le Diplomate", "French brasserie", "1601 14th St NW"));
-        attractions.add(new dcAttractions("Fiola", "High-end Italian Bistro", "601 Pennsylvania Ave NW"));
-        attractions.add(new dcAttractions("Proof", "New American small plates", "775 G St NW"));
-        attractions.add(new dcAttractions("Blue Duck Tavern", "New American, great brunch!", "1201 24th St NW"));
-        attractions.add(new dcAttractions("Little Serow", "Intimate Northern Thai Date Spot", "1511 17th St NW"));
-        attractions.add(new dcAttractions("Brasserie Beck", "High-end Belgian Cuisine and Beer", "1101 K St NW"));
-        attractions.add(new dcAttractions("Osteria Morini", "Northern Italian Eatery", "301 Water St SE #109"));
-        attractions.add(new dcAttractions("Daikaya", "Ramen and Japanese Cuisine", "705 6th St NW"));
+        attractions.add(new dcAttractions(getString(R.string.dip), getString(R.string.dipDesc), getString(R.string.dipAdd)));
+        attractions.add(new dcAttractions(getString(R.string.fol), getString(R.string.folDesc), getString(R.string.folAdd)));
+        attractions.add(new dcAttractions(getString(R.string.proof), getString(R.string.proofDesc), getString(R.string.proofAdd)));
+        attractions.add(new dcAttractions(getString(R.string.blue), getString(R.string.blueDesc), getString(R.string.blueAdd)));
+        attractions.add(new dcAttractions(getString(R.string.ser), getString(R.string.serDesc), getString(R.string.serAdd)));
+        attractions.add(new dcAttractions(getString(R.string.belg), getString(R.string.belgDesc), getString(R.string.belgAdd)));
+        attractions.add(new dcAttractions(getString(R.string.morini), getString(R.string.moriniDesc), getString(R.string.moriniAdd)));
+        attractions.add(new dcAttractions(getString(R.string.daikaya), getString(R.string.daikayaDesc), getString(R.string.daikayaAdd)));
 
         // Create an {@link dcAttractionsAdapter}, whose data source is a list of
         // {@link dcAttractions}s. The adapter knows how to create list item views for each item
