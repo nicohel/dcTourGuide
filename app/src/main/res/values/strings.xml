@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tour Guide</string>
+    <string name="sights">Sightseeing</string>
+    <string name="museums">Museums</string>
+    <string name="welcome_dc">Welcome to Washington D.C.!</string>
+    <string name="introSub">The capital of the United States has a number of attractions to see by day, great food to sample and indulge in, and nightlife to enjoy. This guide will show you some of the highlights!</string>
+</resources>

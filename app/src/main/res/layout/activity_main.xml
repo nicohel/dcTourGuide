@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.alexs.tourguide.MainActivity">
+
+        <ImageView
+            android:id="@+id/mainPic"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/dctour"
+            android:scaleType="centerCrop" />
+        <LinearLayout
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mainPic"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textSize="25sp"
+                android:text="@string/welcome_dc" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/introSub"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/welcome"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/sights"
+                style="@style/CategoryStyle"
+                android:background="@color/category_sights"
+                android:text="@string/sights" />
+
+            <TextView
+                android:id="@+id/museums"
+                style="@style/CategoryStyle"
+                android:background="@color/category_museums"
+                android:text="@string/museums" />
+
+            <TextView
+                android:id="@+id/restaurants"
+                style="@style/CategoryStyle"
+                android:background="@color/category_restaurants"
+                android:text="Restaurants" />
+
+            <TextView
+                android:id="@+id/bars"
+                style="@style/CategoryStyle"
+                android:layout_marginBottom="16dp"
+                android:background="@color/category_bars"
+                android:text="Bars" />
+        </LinearLayout>
+        </RelativeLayout>
+</ScrollView>

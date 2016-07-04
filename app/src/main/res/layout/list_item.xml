@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout for a single list item -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:background="@color/tan_background" >
+
+    <ImageView
+        android:id="@+id/list_item_icon"
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height"
+        android:padding="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/listText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:minHeight="@dimen/list_item_height"
+        android:padding="8dp"
+        android:background="@color/category_sights">
+
+        <TextView
+            android:id="@+id/attraction_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:textColor="@android:color/white"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/attraction_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:textColor="@android:color/white"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/attraction_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:textColor="@android:color/white"
+            android:textAppearance="?android:textAppearanceMedium"/>
+
+    </LinearLayout>
+
+</LinearLayout>
